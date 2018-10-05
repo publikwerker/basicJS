@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chapter 4, Exercise 1</title>
+</head>
+<body>
+	<script>
+		function makeTable(timesBy) {
+			document.write("The " + timesBy + " times table.<br/>");
+			for (var i = 0; i<=12; i++) {
+				document.write(i + " times 12 equals " + (i * 12) + ".<br />");
+			}
+		}
+			
+
+		var timesBy = prompt("What times table would you like to see?", "");
+		makeTable(timesBy);
+		
+	</script>
+</body>
+</html>

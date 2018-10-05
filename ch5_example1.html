@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chapter 5, Example 1 </title>
+</head>
+<body>
+	<script>
+		var myString = "Welcome to Wrox books. " +
+				"The Wrox website it www.wrox.com " +
+				"Visit the Wrox website today. Whanks for buying Wrox";
+		var foundAtPosition = 0;
+		var wroxCount = 0;
+
+		while (foundAtPosition != -1) {
+			foundAtPosition = myString.indexOf("Wrox", foundAtPosition);
+			if (foundAtPosition != -1) {
+				wroxCount++;
+				foundAtPosition++;
+			}
+		}
+
+		document.write("There are " + wroxCount + " occurrences of the word Wrox");
+	</script>
+</body>
+</html>
