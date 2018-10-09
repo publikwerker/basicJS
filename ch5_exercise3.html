@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chapter 5, Example 8</title>
+</head>
+<body>
+<script>
+	function Person(firstName, lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	
+	Person.prototype.getFullName = function() {
+		return this.firstName + " " + this.lastName;
+	};
+	Person.prototype.greet = function(person) {
+		alert("Hello, " + person.getFullName() +
+		". I'm " + this.getFullName() + ".");
+	};
+	
+	var johnDoe = new Person("John", "Doe");
+	var janeDoe = new Person("Jane", "Doe");
+
+	johnDoe.greet(janeDoe);
+</script>
+</body>
+</html>

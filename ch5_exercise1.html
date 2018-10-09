@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chapter 5, Exercise 1</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+	var rightNow = new Date();
+	var theYear = rightNow.getFullYear();
+	var theMonth = rightNow.getMonth();
+	var theDate = rightNow.getDay();
+	document.getElementById("demo").innerHTML = 
+		("The date twelve months from now will be " +
+		theDate + "/" + theMonth + "/" + (theYear+1) +
+		".");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chapter 5, Exercise 2</title>
+</head>
+<body>
+<p id="intro"></p>
+<script>
+	document.getElementById("intro").innerHTML = ("Give me a list of " +
+		"proper names, and I shall alphabetize them.</br>" + 
+		"Type \"stop\" when you are done.");
+	var nameList = [];
+	var theInput;
+	var i = -1;
+	while (theInput != "stop") {
+		i++;
+		theInput = prompt("Gimme a name. ", "");
+		if (theInput == "stop") {
+			continue;
+		}
+		nameList[i] = theInput;
+	}
+	nameList = nameList.sort();
+	arrayLength = nameList.length;
+	for (i=0; i< arrayLength; i++) {
+		document.write(nameList[i] + "<br\>");
+	}
+</script>
+</body>
+</html>
