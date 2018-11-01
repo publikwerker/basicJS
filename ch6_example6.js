@@ -1,3 +1,5 @@
+// javaScript file for the HTML of the same name
+// very poor design to check for valid phone#, zip, and email
 function isValidTelephoneNumber(telephoneNumber) {
 	var telRegExp = /^(\+\d{1,3} ?)?(\(\d{1,5}\)|\d{1,5})?\d{3}?\d{0,7}(  (x|xtn|ext|extn|pax|pbx|extension)?\.? ?\d{2-5})?$/i;
 	return telRegExp.test(telephoneNumber);
